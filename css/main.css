@@ -1,0 +1,29 @@
+/******************************
+Base Styles
+******************************/
+
+body,
+a {
+  background-color: #fdfdfd;
+  color: #050505;
+  font-family: "Spectral", "Constantia", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
