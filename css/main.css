@@ -10,6 +10,11 @@ a {
   text-align: center;
 }
 
+header,
+footer {
+  text-align: left;
+}
+
 h1 {
   font-weight: 600;
 }
@@ -26,4 +31,17 @@ ol,
 ul {
   list-style: none;
   padding: 0;
+}
+
+/******************************
+Navigation
+******************************/
+
+nav {
+  display: flex;
+  flex: 1;
+}
+
+nav li {
+  flex: 1;
 }
