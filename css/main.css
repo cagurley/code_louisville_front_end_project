@@ -1,6 +1,9 @@
 /******************************
 Base Styles
 ******************************/
+# {
+  box-sizing: border-box;
+}
 
 body,
 a {
@@ -33,15 +36,29 @@ ul {
   padding: 0;
 }
 
+li {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
 /******************************
 Navigation
 ******************************/
 
-nav {
+.flex {
   display: flex;
+  justify-content: space-around;
+}
+
+.flex h1 {
   flex: 1;
 }
 
-nav li {
+.flex nav {
+  flex: 3;
+}
+
+.flex li {
   flex: 1;
 }
