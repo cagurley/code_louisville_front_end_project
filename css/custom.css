@@ -1,0 +1,44 @@
+/******************************
+Custom Styles
+******************************/
+
+body,
+a {
+  background-color: #fdfdfd;
+  color: #050505;
+  font-family: "Spectral", "Constantia", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******************************
+Navigation
+******************************/
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex h1 {
+  flex: 1;
+}
+
+.flex nav {
+  flex: 3;
+}
+
+.flex li {
+  flex: 1;
+}
