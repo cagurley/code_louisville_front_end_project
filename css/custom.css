@@ -42,3 +42,12 @@ Navigation
 .flex li {
   flex: 1;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+.page {
+  min-height: 100%;
+}

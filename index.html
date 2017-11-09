@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/custom.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#header">
     <!-- landing -->
-    <div id="landing" class="container">
+    <div id="landing" class="container page">
       <div class="jumbotron">
-        <h1 class="">(OHLM)</h1>
+        <h1 id="mainhead" class="">(OHLM)</h1>
         <h2 class="">An exploration of a story without words.</h2>
         <h2 class="">Let your ears take you there.</h2>
       </div>
@@ -24,7 +24,7 @@
       <div class="container">
         <div class="row">
           <h4 class="col-sm-6 col-md-4">
-            <a href="band.html">(band)</a>
+            <a href="#band">(band)</a>
           </h4>
           <h4 class="col-sm-6 col-md-4">
             <a href="contact.html">(contact)</a>
@@ -45,7 +45,59 @@
       </div>
     </div>
     <!-- /landing -->
-    <footer id="smstickyfoot" class="container justify-content-around">
+    <header id="header" class="flex inside">
+      <h1>
+        <a href="index.html">(OHLM)</a>
+      </h1>
+      <nav class="sticky top">
+        <ul class="flex">
+          <li>
+            <a href="band.html" class="selected">(band)</a>
+          </li>
+          <li>
+            <a href="contact.html">(contact)</a>
+          </li>
+          <li>
+            <a href="discography.html">(discography)</a>
+          </li>
+          <li>
+            <a href="events.html">(events)</a>
+          </li>
+          <li>
+            <a href="media.html">(media)</a>
+          </li>
+          <li>
+            <a href="merch.html">(merch)</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- band -->
+    <div id="band" class="container page inside">
+      <h1>BAND</h1>
+      <p>*band summary*</p>
+      <figure>
+        <img src="">
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <img src="">
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <img src="">
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <img src="">
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <img src="">
+        <figcaption></figcaption>
+      </figure>
+    </div>
+    <footer id="smstickyfoot" class="container justify-content-around inside">
       <div class="row">
         <div class="col-6">
           <a href="https://ohlm.bandcamp.com" target="_blank">(bandcamp)</a>
@@ -55,8 +107,9 @@
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
