@@ -31,23 +31,6 @@ Navigation
   margin-right: 0;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-around;
-}
-
-/*.flex h1 {
-  flex: 1;
-}
-
-.flex nav {
-  flex: 3;
-}
-
-.flex li {
-  flex: 1;
-}*/
-
 html,
 body {
   height: 100%;
@@ -59,14 +42,14 @@ body {
 }
 
 #navi {
-  position: absolute;
+  position: fixed;
   top: 0;
   min-width: 100%;
   height: 5%;
 }
 
 #foot {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   min-width: 100%;
   height: 5%;

@@ -26,7 +26,7 @@ function scrollTrigger(event) {
   } // End if
 }
 
-function fadeTrigger(event) {
+function fadeTriggerEnter(event) {
   if (this.hash !== "") {
     // Prevent default anchor click behavior
     event.preventDefault();
@@ -41,6 +41,21 @@ function fadeTrigger(event) {
   } // End if
 }
 
+function fadeTriggerReturn(event) {
+  if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+    // Store hash
+    const hash = this.hash;
+    // FadeOut landing and fadeIn rest of site (like entering a portal)
+    $('.inside').fadeOut(function () {
+      $('#landing').fadeIn(function () {
+        smoothScroll(hash);
+      }); //End fadeIn
+    }); //End fadeOut
+  } // End if
+}
+
 /******************************
 LANDING
 ******************************/
@@ -49,5 +64,9 @@ LANDING
 window.location.hash = '';
 $('.inside').hide();
 $('#landing').show();
-// On link click, fade to rest of page and scroll to <div id="hash">
-$('h4 a').click(fadeTrigger);
+// On landing link click, fade to rest of page and scroll to <div id="hash">
+$('.landlink').click(fadeTriggerEnter);
+// On nav link click, scroll to <div id="hash">
+$('.nav-link').click(scrollTrigger);
+
+$('#return').click(fadeTriggerReturn);
