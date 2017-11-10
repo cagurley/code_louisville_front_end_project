@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   </head>
-  <body data-spy="scroll" data-target="#header">
+  <body data-spy="scroll" data-target="#navi">
     <!-- landing -->
     <div id="landing" class="container page">
       <div class="jumbotron">
@@ -27,77 +27,122 @@
             <a href="#band">(band)</a>
           </h4>
           <h4 class="col-sm-6 col-md-4">
-            <a href="contact.html">(contact)</a>
+            <a href="#contact">(contact)</a>
           </h4>
           <h4 class="col-sm-6 col-md-4">
-            <a href="discography.html">(discography)</a>
+            <a href="#discography">(discography)</a>
           </h4>
           <h4 class="col-sm-6 col-md-4">
-            <a href="events.html">(events)</a>
+            <a href="#events">(events)</a>
           </h4>
           <h4 class="col-sm-6 col-md-4">
-            <a href="media.html">(media)</a>
+            <a href="#media">(media)</a>
           </h4>
           <h4 class="col-sm-6 col-md-4">
-            <a href="merch.html">(merch)</a>
+            <a href="#merch">(merch)</a>
           </h4>
         </div>
       </div>
     </div>
     <!-- /landing -->
-    <header id="header" class="flex inside">
-      <h1>
-        <a href="index.html">(OHLM)</a>
-      </h1>
-      <nav class="sticky top">
-        <ul class="flex">
-          <li>
-            <a href="band.html" class="selected">(band)</a>
+    <!-- navbar -->
+    <nav id="navi" class="navbar navbar-expand-lg navbar-light bg-light inside">
+      <a class="navbar-brand" href="#">(OHLM)</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarLinks">
+        <ul class="navbar-nav ml-auto float-right">
+          <li class="nav-item float-right">
+            <a class="nav-link" href="#band">(band)</a>
           </li>
-          <li>
-            <a href="contact.html">(contact)</a>
+          <li class="nav-item float-right">
+            <a class="nav-link" href="#contact">(contact)</a>
           </li>
-          <li>
-            <a href="discography.html">(discography)</a>
+          <li class="nav-item float-right">
+            <a class="nav-link" href="#discography">(discography)</a>
           </li>
-          <li>
-            <a href="events.html">(events)</a>
+          <li class="nav-item float-right">
+            <a class="nav-link float-right" href="#events">(events)</a>
           </li>
-          <li>
-            <a href="media.html">(media)</a>
+          <li class="nav-item float-right">
+            <a class="nav-link" href="#media">(media)</a>
           </li>
-          <li>
-            <a href="merch.html">(merch)</a>
+          <li class="nav-item float-right">
+            <a class="nav-link" href="#merch">(merch)</a>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
+    <!-- /navbar -->
     <!-- band -->
     <div id="band" class="container page inside">
       <h1>BAND</h1>
       <p>*band summary*</p>
-      <figure>
-        <img src="">
-        <figcaption></figcaption>
-      </figure>
-      <figure>
-        <img src="">
-        <figcaption></figcaption>
-      </figure>
-      <figure>
-        <img src="">
-        <figcaption></figcaption>
-      </figure>
-      <figure>
-        <img src="">
-        <figcaption></figcaption>
-      </figure>
-      <figure>
-        <img src="">
-        <figcaption></figcaption>
-      </figure>
+      <div class="container">
+        <div class="row">
+          <figure class="col-sm-6 col-md-4">
+            <img src="">
+            <figcaption></figcaption>
+          </figure>
+          <figure class="col-sm-6 col-md-4">
+            <img src="">
+            <figcaption></figcaption>
+          </figure>
+          <figure class="col-sm-6 col-md-4">
+            <img src="">
+            <figcaption></figcaption>
+          </figure>
+          <figure class="col-sm-6 col-md-4">
+            <img src="">
+            <figcaption></figcaption>
+          </figure>
+          <figure class="col-sm-6 col-md-4">
+            <img src="">
+            <figcaption></figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
-    <footer id="smstickyfoot" class="container justify-content-around inside">
+    <!-- /band --><!-- band -->
+    <div id="contact" class="container page inside">
+      <h1>CONTACT</h1>
+      <p>*contact form*</p>
+      <div class="container">
+
+      </div>
+    </div>
+    <div id="discography" class="container page inside">
+      <h1>DISCOGRAPHY</h1>
+      <p>*discography*</p>
+      <div class="container">
+
+      </div>
+    </div>
+    <div id="events" class="container page inside">
+      <h1>EVENTS</h1>
+      <p>*events*</p>
+      <div class="container">
+
+      </div>
+    </div>
+    <div id="media" class="container page inside">
+      <h1>MEDIA</h1>
+      <p>*media*</p>
+      <div class="container">
+
+      </div>
+    </div>
+    <div id="merch" class="container page inside">
+      <h1>MERCH</h1>
+      <p>*merch*</p>
+      <div class="container">
+
+      </div>
+    </div>
+    <!-- /band -->
+    <!-- footer -->
+    <footer id="foot" class="container justify-content-around inside">
       <div class="row">
         <div class="col-6">
           <a href="https://ohlm.bandcamp.com" target="_blank">(bandcamp)</a>
@@ -107,6 +152,7 @@
         </div>
       </div>
     </footer>
+    <!-- /footer -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
