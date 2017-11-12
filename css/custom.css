@@ -19,7 +19,8 @@ h1 {
   padding-bottom: 1rem;
 }
 
-h2 {
+h2,
+.display-1 {
   font-weight: 500;
 }
 
@@ -29,16 +30,26 @@ a {
   text-decoration: none;
 }
 
-img,
 figcaption {
-  max-height: 100%;
-  max-width: 100%;
+  font-size: 1.25rem;
 }
 
-img {
-  max-width: 230px;
-  max-height: 470px;
-  border-radius: 1%;
+.page {
+  min-height: 100%;
+  padding-top: 5%;
+}
+
+/******************************
+Landing
+******************************/
+
+.jumbotron {
+  background-color: #fdfdfd;
+  margin: 0;
+}
+
+h3 {
+  padding-bottom: 2rem;
 }
 
 /******************************
@@ -50,11 +61,6 @@ Navigation
   margin-right: 0;
 }
 
-.page {
-  min-height: 100%;
-  padding-top: 5%;
-}
-
 #navi {
   position: fixed;
   top: 0;
@@ -62,6 +68,11 @@ Navigation
   height: 5%;
   min-height: 40px;
   z-index: 500;
+}
+
+#return {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 #foot {
@@ -76,3 +87,91 @@ Navigation
 #foot div {
   min-height: 100%;
 }
+
+/******************************
+Band
+******************************/
+
+.member {
+  max-width: 230px;
+  max-height: 470px;
+  border-radius: 1%;
+}
+
+/******************************
+Contact
+******************************/
+
+textarea {
+  width: 400px;
+  height: 175px;
+}
+
+@media all and (min-width: 768px) {
+  textarea {
+    width: 500px;
+    height: 225px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  textarea {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  textarea {
+    width: 800px;
+    height: 400px;
+  }
+}
+
+/******************************
+Discography
+******************************/
+
+.cover {
+  width: 250px;
+  height: 250px;
+  border-radius: 1%;
+}
+
+@media all and (min-width: 768px) {
+  .cover {
+    width: 325px;
+    height: 325px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .cover {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .cover {
+    width: 475px;
+    height: 475px;
+  }
+}
+
+.albumtitle {
+  font-weight: 500;
+  font-style: italic;
+}
+
+/******************************
+Events
+******************************/
+
+/******************************
+Media
+******************************/
+
+/******************************
+Merch
+******************************/

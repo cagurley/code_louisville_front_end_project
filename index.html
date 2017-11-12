@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/custom.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   </head>
-  <body data-spy="scroll" data-offset="1000" data-target="#navi">
+  <body data-spy="scroll" data-offset="50" data-target="#navi">
     <!-- landing -->
     <div id="landing" class="container page">
-      <noscript><br><h1>Our page looks and functions best with JavaScript enabled. Please reenable JavaScript for the complete (OHLM) experience.</h1><br></noscript>
+      <noscript><br><h1>Our page looks and functions best with JavaScript enabled. Please reenable JavaScript for the complete (ohlm) experience.</h1><br></noscript>
       <div class="jumbotron">
         <h1 id="mainhead" class="display-1">(OHLM)</h1>
         <h2 class="display-4">An exploration of a story without words.</h2>
@@ -22,7 +22,7 @@
           <source src="music/01 Amber Dawn.m4a">
         </audio>
       </div>
-      <div class="container">
+      <div class="container pt-5">
         <div class="row">
           <h3 class="col-sm-6 col-md-4">
             <a class="landlink" href="#band">(band)</a>
@@ -64,7 +64,7 @@
             <a class="nav-link" href="#discography">(discography)</a>
           </li>
           <li class="nav-item float-right">
-            <a class="nav-link float-right" href="#events">(events)</a>
+            <a class="nav-link" href="#events">(events)</a>
           </li>
           <li class="nav-item float-right">
             <a class="nav-link" href="#media">(media)</a>
@@ -78,28 +78,29 @@
     <!-- /navbar -->
     <!-- band -->
     <div id="band" class="container page inside">
-      <h1>BAND</h1>
+      <h1>(BAND)</h1>
       <p>Formed in late 2004, (ohlm) is a different approach to well-thought-out music with heavy tones and deep concepts, constantly evolving toward a more progressive state.</p>
       <div class="container pt-3">
         <div class="row">
           <figure class="col-sm-6 col-lg-4">
-            <img src="img/nate.jpg">
+            <img src="img/nate.jpg" alt="Nate" class="member">
             <figcaption class="pt-3">Nate, guitar</figcaption>
           </figure>
           <figure class="col-sm-6 col-lg-4">
-            <img src="img/josh.jpg">
+            <img src="img/josh.jpg" class="member">
             <figcaption class="pt-3">Josh, drums</figcaption>
           </figure>
           <figure class="col-sm-6 col-lg-4">
-            <img src="img/dave.jpg">
+            <img src="img/dave.jpg" class="member">
             <figcaption class="pt-3">Dave, bass</figcaption>
           </figure>
-          <figure class="col-sm-6 col-lg-6">
-            <img src="img/marisa.jpg">
+          <div class="d-none d-lg-block col-lg-2"></div>
+          <figure class="col-sm-6 col-lg-4">
+            <img src="img/marisa.jpg" class="member">
             <figcaption class="pt-3">Marisa, violin</figcaption>
           </figure>
-          <figure class="col-sm-12 col-lg-6">
-            <img src="img/jr.jpg">
+          <figure class="col-sm-12 col-lg-4">
+            <img src="img/jr.jpg" class="member">
             <figcaption class="pt-3">J.R., keys/media/synth</figcaption>
           </figure>
         </div>
@@ -108,7 +109,7 @@
     <!-- /band -->
     <!-- contact -->
     <div id="contact" class="container page inside">
-      <h1>CONTACT</h1>
+      <h1>(CONTACT)</h1>
       <p>You can contact (ohlm) in person at our next show or via email. Emails can be sent to
         <a href="mailto:atticus.gurley@gmail.com">**atticusgurley@gmail.com**</a>
          using your own email client or fill out and submit the form below.</p>
@@ -124,7 +125,7 @@
           </div>
           <div class="form-group">
             <label for="formmessage">(message)</label><br>
-            <textarea cols="100" rows="15" name="(message)" id="formmessage"></textarea>
+            <textarea cols="50" rows="15" name="(message)" id="formmessage"></textarea>
           </div>
           <div class="form-group">
             <button type="submit">(SEND)</button>
@@ -136,16 +137,35 @@
     <!-- /contact -->
     <!-- discography -->
     <div id="discography" class="container page inside">
-      <h1>DISCOGRAPHY</h1>
-      <p>*discography*</p>
-      <div class="container">
-
+      <h1>(DISCOGRAPHY)</h1>
+      <p>The (ohlm) discography currently comprises two full-length albums, 2013's <i>The Synaptic Dissent</i> and 2016's <i>Centralia A.D.</i><br>We are currently hard at work on our next album, which is coming very soon...</p>
+      <div class="container pt-3">
+        <div class="row">
+          <a href="https://ohlm.bandcamp.com/album/centralia-a-d" target="_blank" class="col-sm-6">
+            <figure>
+              <img src="img/centraliaad.jpg" alt="Skeleton with a gas mask gripping red smoke on a white background with a black hand print and various symbols" class="cover">
+              <figcaption class="pt-3 albumtitle">Centralia A.D</figcaption>
+            </figure>
+          </a>
+          <a href="https://ohlm.bandcamp.com/album/the-synaptic-dissent" target="_blank" class="col-sm-6">
+            <figure>
+              <img src="img/thesynapticdissent.jpg" class="cover">
+              <figcaption class="pt-3 albumtitle">The Synaptic Dissent</figcaption>
+            </figure>
+          </a>
+          <a href="https://www.facebook.com/ohlmmusic/videos/" target="_blank" class="col">
+            <figure>
+              <img src="img/placeholder.jpg" class="cover">
+              <figcaption class="pt-3 albumtitle">TBA</figcaption>
+            </figure>
+          </a>
+        </div>
       </div>
     </div>
     <!-- /discography -->
     <!-- events -->
     <div id="events" class="container page inside">
-      <h1>EVENTS</h1>
+      <h1>(EVENTS)</h1>
       <p>*events*</p>
       <div class="container">
 
@@ -154,7 +174,7 @@
     <!-- /events -->
     <!-- media -->
     <div id="media" class="container page inside">
-      <h1>MEDIA</h1>
+      <h1>(MEDIA)</h1>
       <p>*media*</p>
       <div class="container">
 
@@ -163,7 +183,7 @@
     <!-- /media -->
     <!-- merch -->
     <div id="merch" class="container page inside">
-      <h1>MERCH</h1>
+      <h1>(MERCH)</h1>
       <p>*merch*</p>
       <div class="container">
 
