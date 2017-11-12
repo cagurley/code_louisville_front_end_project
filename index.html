@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="css/custom.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   </head>
-  <body data-spy="scroll" data-target="#navi">
+  <body data-spy="scroll" data-offset="1000" data-target="#navi">
     <!-- landing -->
     <div id="landing" class="container page">
+      <noscript><br><h1>Our page looks and functions best with JavaScript enabled. Please reenable JavaScript for the complete (OHLM) experience.</h1><br></noscript>
       <div class="jumbotron">
-        <h1 id="mainhead" class="">(OHLM)</h1>
-        <h2 class="">An exploration of a story without words.</h2>
-        <h2 class="">Let your ears take you there.</h2>
+        <h1 id="mainhead" class="display-1">(OHLM)</h1>
+        <h2 class="display-4">An exploration of a story without words.</h2>
+        <h2 class="display-4">Let your ears take you there.</h2>
       </div>
       <div class="container-fluid">
         <audio controls="controls">
@@ -23,24 +24,24 @@
       </div>
       <div class="container">
         <div class="row">
-          <h4 class="col-sm-6 col-md-4">
+          <h3 class="col-sm-6 col-md-4">
             <a class="landlink" href="#band">(band)</a>
-          </h4>
-          <h4 class="col-sm-6 col-md-4">
+          </h3>
+          <h3 class="col-sm-6 col-md-4">
             <a class="landlink" href="#contact">(contact)</a>
-          </h4>
-          <h4 class="col-sm-6 col-md-4">
+          </h3>
+          <h3 class="col-sm-6 col-md-4">
             <a class="landlink" href="#discography">(discography)</a>
-          </h4>
-          <h4 class="col-sm-6 col-md-4">
+          </h3>
+          <h3 class="col-sm-6 col-md-4">
             <a class="landlink" href="#events">(events)</a>
-          </h4>
-          <h4 class="col-sm-6 col-md-4">
+          </h3>
+          <h3 class="col-sm-6 col-md-4">
             <a class="landlink" href="#media">(media)</a>
-          </h4>
-          <h4 class="col-sm-6 col-md-4">
+          </h3>
+          <h3 class="col-sm-6 col-md-4">
             <a class="landlink" href="#merch">(merch)</a>
-          </h4>
+          </h3>
         </div>
       </div>
     </div>
@@ -78,40 +79,62 @@
     <!-- band -->
     <div id="band" class="container page inside">
       <h1>BAND</h1>
-      <p>*band summary*</p>
-      <div class="container">
+      <p>Formed in late 2004, (ohlm) is a different approach to well-thought-out music with heavy tones and deep concepts, constantly evolving toward a more progressive state.</p>
+      <div class="container pt-3">
         <div class="row">
-          <figure class="col-sm-6 col-md-4">
-            <img src="">
-            <figcaption></figcaption>
+          <figure class="col-sm-6 col-lg-4">
+            <img src="img/nate.jpg">
+            <figcaption class="pt-3">Nate, guitar</figcaption>
           </figure>
-          <figure class="col-sm-6 col-md-4">
-            <img src="">
-            <figcaption></figcaption>
+          <figure class="col-sm-6 col-lg-4">
+            <img src="img/josh.jpg">
+            <figcaption class="pt-3">Josh, drums</figcaption>
           </figure>
-          <figure class="col-sm-6 col-md-4">
-            <img src="">
-            <figcaption></figcaption>
+          <figure class="col-sm-6 col-lg-4">
+            <img src="img/dave.jpg">
+            <figcaption class="pt-3">Dave, bass</figcaption>
           </figure>
-          <figure class="col-sm-6 col-md-4">
-            <img src="">
-            <figcaption></figcaption>
+          <figure class="col-sm-6 col-lg-6">
+            <img src="img/marisa.jpg">
+            <figcaption class="pt-3">Marisa, violin</figcaption>
           </figure>
-          <figure class="col-sm-6 col-md-4">
-            <img src="">
-            <figcaption></figcaption>
+          <figure class="col-sm-12 col-lg-6">
+            <img src="img/jr.jpg">
+            <figcaption class="pt-3">J.R., keys/media/synth</figcaption>
           </figure>
         </div>
       </div>
     </div>
-    <!-- /band --><!-- band -->
+    <!-- /band -->
+    <!-- contact -->
     <div id="contact" class="container page inside">
       <h1>CONTACT</h1>
-      <p>*contact form*</p>
+      <p>You can contact (ohlm) in person at our next show or via email. Emails can be sent to
+        <a href="mailto:atticus.gurley@gmail.com">**atticusgurley@gmail.com**</a>
+         using your own email client or fill out and submit the form below.</p>
       <div class="container">
-
+        <form action="mailto:atticus.gurley@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="formname">(name)</label><br>
+            <input type="text" name="(name)" id="formname">
+          </div>
+          <div class="form-group">
+            <label for="formsubject">(subject)</label><br>
+            <input type="text" name="(subject)" id="formsubject">
+          </div>
+          <div class="form-group">
+            <label for="formmessage">(message)</label><br>
+            <textarea cols="100" rows="15" name="(message)" id="formmessage"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">(SEND)</button>
+            <button type="reset">(CLEAR)</button>
+          </div>
+        </form>
       </div>
     </div>
+    <!-- /contact -->
+    <!-- discography -->
     <div id="discography" class="container page inside">
       <h1>DISCOGRAPHY</h1>
       <p>*discography*</p>
@@ -119,6 +142,8 @@
 
       </div>
     </div>
+    <!-- /discography -->
+    <!-- events -->
     <div id="events" class="container page inside">
       <h1>EVENTS</h1>
       <p>*events*</p>
@@ -126,6 +151,8 @@
 
       </div>
     </div>
+    <!-- /events -->
+    <!-- media -->
     <div id="media" class="container page inside">
       <h1>MEDIA</h1>
       <p>*media*</p>
@@ -133,6 +160,8 @@
 
       </div>
     </div>
+    <!-- /media -->
+    <!-- merch -->
     <div id="merch" class="container page inside">
       <h1>MERCH</h1>
       <p>*merch*</p>
@@ -140,10 +169,10 @@
 
       </div>
     </div>
-    <!-- /band -->
+    <!-- /merch -->
     <!-- footer -->
-    <footer id="foot" class="container justify-content-around inside">
-      <div class="row">
+    <footer id="foot" class="container justify-content-around bg-light inside">
+      <div class="row align-items-center">
         <div class="col-6">
           <a href="https://ohlm.bandcamp.com" target="_blank">(bandcamp)</a>
         </div>

@@ -68,5 +68,5 @@ $('#landing').show();
 $('.landlink').click(fadeTriggerEnter);
 // On nav link click, scroll to <div id="hash">
 $('.nav-link').click(scrollTrigger);
-
+// On nav brand link click, fade to landing page and scroll to <div id="hash">
 $('#return').click(fadeTriggerReturn);
