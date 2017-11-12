@@ -70,3 +70,11 @@ $('.landlink').click(fadeTriggerEnter);
 $('.nav-link').click(scrollTrigger);
 // On nav brand link click, fade to landing page and scroll to <div id="hash">
 $('#return').click(fadeTriggerReturn);
+
+/******************************
+MERCH
+******************************/
+
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
