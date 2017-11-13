@@ -25,8 +25,13 @@ h2,
 }
 
 a {
-  color: #050505;
-  font-family: "Spectral", "Constantia", sans-serif;
+  color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: rgba(0,0,0,.7);
   text-decoration: none;
 }
 
@@ -36,7 +41,7 @@ figcaption {
 
 .page {
   min-height: 100%;
-  padding-top: 5%;
+  padding-top: calc( 40px + 2.5% );
 }
 
 /******************************
@@ -52,14 +57,13 @@ h3 {
   padding-bottom: 2rem;
 }
 
+.landlink {
+  color: #050505;
+}
+
 /******************************
 Navigation
 ******************************/
-
-.navbar-nav {
-  padding-right: 0;
-  margin-right: 0;
-}
 
 #navi {
   position: fixed;
@@ -68,6 +72,20 @@ Navigation
   height: 5%;
   min-height: 40px;
   z-index: 500;
+  background-color: #eff1f2;
+}
+
+.navbar-toggler {
+  height: 36px;
+}
+
+.navbar-toggler-icon {
+  height: 27px;
+}
+
+.navbar-nav {
+  padding-right: 0;
+  margin-right: 0;
 }
 
 #return {
@@ -82,10 +100,15 @@ Navigation
   height: 5%;
   min-height: 40px;
   z-index: 500;
+  background-color: #eff1f2;
 }
 
 #foot div {
   min-height: 100%;
+}
+
+.footlink {
+  color: #050505;
 }
 
 /******************************
@@ -126,6 +149,11 @@ textarea {
     width: 800px;
     height: 400px;
   }
+}
+
+.btn:focus,
+.btn:hover {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.5);
 }
 
 /******************************

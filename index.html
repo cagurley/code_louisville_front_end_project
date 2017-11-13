@@ -47,7 +47,7 @@
     </div>
     <!-- /landing -->
     <!-- navbar -->
-    <nav id="navi" class="navbar navbar-expand-lg navbar-light bg-light inside">
+    <nav id="navi" class="navbar navbar-expand-lg navbar-light inside">
       <a id="return" class="navbar-brand" href="#landing">(OHLM)</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -128,8 +128,8 @@
             <textarea cols="50" rows="15" name="(message)" id="formmessage"></textarea>
           </div>
           <div class="form-group">
-            <button type="submit">(SEND)</button>
-            <button type="reset">(CLEAR)</button>
+            <button type="submit" class="btn">(SEND)</button>
+            <button type="reset" class="btn">(CLEAR)</button>
           </div>
         </form>
       </div>
@@ -166,9 +166,23 @@
     <!-- events -->
     <div id="events" class="container page inside">
       <h1>(EVENTS)</h1>
-      <p>*events*</p>
-      <div class="container">
-
+      <p>You can find our announced shows below. We want to see you there.</p>
+      <div class="container mt-4 pt-2">
+        <div class="card mx-auto" style="width: 22rem;">
+          <img class="card-img-top" src="img/show_20171118.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Monster Metal Madness!</h4>
+            <p class="card-text">Three of Louisville's most notorious metal oddballs TEAM UP to take over Kaiju this November!!!</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Stagecoach Inferno, (ohlm), Decapitron</li>
+            <li class="list-group-item">Kaiju, 1004 E Oak St, Louisville, KY 40204</li>
+            <li class="list-group-item">November 18th at 8 PM, $5 at the door</li>
+          </ul>
+          <div class="card-body">
+            <a href="https://www.facebook.com/events/261953967659165/" class="card-link">Click for more details.</a>
+          </div>
+        </div>
       </div>
     </div>
     <!-- /events -->
@@ -201,13 +215,13 @@
     </div>
     <!-- /merch -->
     <!-- footer -->
-    <footer id="foot" class="container justify-content-around bg-light inside">
+    <footer id="foot" class="container justify-content-around inside">
       <div class="row align-items-center">
         <div class="col-6">
-          <a href="https://ohlm.bandcamp.com" target="_blank">(bandcamp)</a>
+          <a href="https://ohlm.bandcamp.com" target="_blank" class="footlink">(bandcamp)</a>
         </div>
         <div class="col-6">
-          <a href="https://facebook.com/ohlmmusic" target="_blank">(facebook)</a>
+          <a href="https://facebook.com/ohlmmusic" target="_blank" class="footlink">(facebook)</a>
         </div>
       </div>
     </footer>
