@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>(ohlm) Official Website</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral:300,400,500,500i,600" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   </head>
-  <body data-spy="scroll" data-offset="50" data-target="#navi">
+  <body data-spy="scroll" data-offset="120" data-target="#navi">
     <!-- landing -->
     <div id="landing" class="container page">
       <noscript><br><h1>Our page looks and functions best with JavaScript enabled. Please reenable JavaScript for the complete (ohlm) experience.</h1><br></noscript>
@@ -18,9 +18,7 @@
         <h2 class="display-4">Let your ears take you there.</h2>
       </div>
       <div class="container-fluid">
-        <audio controls="controls">
-          <source src="music/01 Amber Dawn.m4a">
-        </audio>
+        <img id="audioland" class="lplay" src="img/play.svg" alt="Audio play/pause button">
       </div>
       <div class="container pt-5">
         <div class="row">
@@ -83,24 +81,24 @@
       <div class="container pt-3">
         <div class="row">
           <figure class="col-sm-6 col-lg-4">
-            <img src="img/nate.jpg" alt="Nate" class="member">
+            <img src="img/nate.jpg" class="member" alt="Nate playing guitar">
             <figcaption class="pt-3">Nate, guitar</figcaption>
           </figure>
           <figure class="col-sm-6 col-lg-4">
-            <img src="img/josh.jpg" class="member">
+            <img src="img/josh.jpg" class="member" alt="Josh playing drums">
             <figcaption class="pt-3">Josh, drums</figcaption>
           </figure>
           <figure class="col-sm-6 col-lg-4">
-            <img src="img/dave.jpg" class="member">
+            <img src="img/dave.jpg" class="member" alt="Dave playing bass">
             <figcaption class="pt-3">Dave, bass</figcaption>
           </figure>
           <div class="d-none d-lg-block col-lg-2"></div>
           <figure class="col-sm-6 col-lg-4">
-            <img src="img/marisa.jpg" class="member">
+            <img src="img/marisa.jpg" class="member" alt="Marisa playing violin">
             <figcaption class="pt-3">Marisa, violin</figcaption>
           </figure>
           <figure class="col-sm-12 col-lg-4">
-            <img src="img/jr.jpg" class="member">
+            <img src="img/jr.jpg" class="member" alt="Distressed fetus graphic in black and white">
             <figcaption class="pt-3">J.R., keys/media/synth</figcaption>
           </figure>
         </div>
@@ -149,13 +147,13 @@
           </a>
           <a href="https://ohlm.bandcamp.com/album/the-synaptic-dissent" target="_blank" class="col-sm-6">
             <figure>
-              <img src="img/thesynapticdissent.jpg" class="cover">
+              <img src="img/thesynapticdissent.jpg" alt="Skeleton on a crucifix with a dark, haloed figure admist cannabis leaves on top and the top of a sun on bottom emitting a ray of white lightning surrounded by symbols on a starry black background" class="cover">
               <figcaption class="pt-3 albumtitle">The Synaptic Dissent</figcaption>
             </figure>
           </a>
           <a href="https://www.facebook.com/ohlmmusic/videos/" target="_blank" class="col">
             <figure>
-              <img src="img/placeholder.jpg" class="cover">
+              <img src="img/placeholder.jpg" class="cover" alt="OHLM logo above crossed arms pointing upward overlayed with gas mask">
               <figcaption class="pt-3 albumtitle">TBA</figcaption>
             </figure>
           </a>
@@ -166,10 +164,10 @@
     <!-- events -->
     <div id="events" class="container page inside">
       <h1>(EVENTS)</h1>
-      <p>You can find our announced shows below. We want to see you there.</p>
+      <p>You can find our announced shows below. Come out and join us.</p>
       <div class="container mt-4 pt-2">
         <div class="card mx-auto" style="width: 22rem;">
-          <img class="card-img-top" src="img/show_20171118.jpg" alt="Card image cap">
+          <img class="card-img-top" src="img/show_20171118.jpg" alt="Monster Metal Madness! poster done in a retro style featuring a large ape with a skeleton face and martian helmet holding an inconscious woman in a green dress with various monsters in the background">
           <div class="card-body">
             <h4 class="card-title">Monster Metal Madness!</h4>
             <p class="card-text">Three of Louisville's most notorious metal oddballs TEAM UP to take over Kaiju this November!!!</p>
@@ -190,9 +188,9 @@
     <div id="media" class="container page inside">
       <h1>(MEDIA)</h1>
       <p>Watch a sampling of our music videos and performances below.<br>Then see us live at our next show.</p>
-      <div class="container">
-        <div id="player" class="pt-3">
-          <noscript>With JavaScript enabled, you can watch a playlist of (ohlm) performances. Please enable JavaScript and refresh the page to watch now.</noscript>
+      <div class="videoWrapper mt-5">
+        <div id="player">
+          <noscript><h1>With JavaScript enabled, you can watch a playlist of (ohlm) performances. Please enable JavaScript and refresh the page to watch now.</h1</noscript>
         </div>
       </div>
     </div>
@@ -204,13 +202,13 @@
       <div class="container pt-3">
         <div class="row">
           <figure class="col-4">
-            <img src="img/merch01.jpg" class="merch" data-toggle="popover" data-placement="bottom" data-content="TESTING!">
+            <img src="img/merch01.jpg" class="merch" alt="Black t-shirt with 'Centralia Death' printed in scratchy white font">
           </figure>
           <figure class="col-4">
-            <img src="img/merch02.jpg" class="merch">
+            <img src="img/merch02.jpg" class="merch" alt="Black t-shirt with gas mask between giant paretheses printed in white">
           </figure>
           <figure class="col-4">
-            <img src="img/merch03.jpg" class="merch">
+            <img src="img/merch03.jpg" class="merch" alt="Black t-shirt with OHLM logo and gas mask overlaying crossed arms printed in white">
           </figure>
         </div>
       </div>
@@ -219,12 +217,17 @@
     <!-- footer -->
     <footer id="foot" class="container justify-content-around inside">
       <div class="row align-items-center">
-        <div class="col-6">
+        <div class="col-1"></div>
+        <div class="col-4">
           <a href="https://ohlm.bandcamp.com" target="_blank" class="footlink">(bandcamp)</a>
         </div>
-        <div class="col-6">
+        <div class="col-2">
+          <img id="audiofoot" class="fplay" src="img/play.svg" alt="Audio play/pause button">
+        </div>
+        <div class="col-4">
           <a href="https://facebook.com/ohlmmusic" target="_blank" class="footlink">(facebook)</a>
         </div>
+        <div class="col-1"></div>
       </div>
     </footer>
     <!-- /footer -->

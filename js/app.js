@@ -1,5 +1,3 @@
-//Loop through all songs for audio player
-
 /******************************
 FUNCTION DECLARATIONS
 ******************************/
@@ -57,7 +55,7 @@ function fadeTriggerReturn(event) {
 }
 
 /******************************
-LANDING
+TRANSITIONS
 ******************************/
 
 // On page load default to only landing page displayed and remove hash value to reflect this
@@ -72,9 +70,20 @@ $('.nav-link').click(scrollTrigger);
 $('#return').click(fadeTriggerReturn);
 
 /******************************
-MERCH
+AUDIO
 ******************************/
 
-$('.popover-dismiss').popover({
-  trigger: 'focus'
-})
+// Initialize audio track variable
+var audio = new Audio('music/01 Amber Dawn.m4a');
+// Toggle classes and play/pause contextually on .svg click
+$('#audioland, #audiofoot').click( function () {
+  $('#audioland').toggleClass('lplay');
+  $('#audiofoot').toggleClass('fplay');
+  $('#audioland').toggleClass('lpause');
+  $('#audiofoot').toggleClass('fpause');
+  if ($('#audioland').hasClass('lplay')) {
+    audio.pause();
+  } else {
+    audio.play();
+  }
+});
