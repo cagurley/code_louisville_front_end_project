@@ -73,8 +73,9 @@ $('#return').click(fadeTriggerReturn);
 AUDIO
 ******************************/
 
-// Initialize audio track variable
-var audio = new Audio('music/01 Amber Dawn.m4a');
+// Initialize audio track variable and volume
+var audio = new Audio('music/hail_prometheus.mp3');
+audio.volume = 0.5;
 // Toggle classes and play/pause contextually on .svg click
 $('#audioland, #audiofoot').click( function () {
   $('#audioland').toggleClass('lplay');

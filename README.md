@@ -12,7 +12,7 @@ The custom CSS used is linked at the bottom of the head; to view it, navigate to
 
 The portal/entrance illusion is accomplished with JavaScript, so the landing page might look especially wonky with JS disabled.
 
-The play button .svg images function as simple play/pause audio controls for the track I have selected; please click to listen.
+The play button .svg images function as simple play/pause audio controls for the track I have selected; please click to listen. I have set the audio to half volume out of consideration for those with very quiet or very loud speakers, but you may need to set Chrome's volume separately if your master controls won't do what you need.
 
 The contact form is functional, requiring no server side code, but you must have a default email client specified and properly set up. You can click the link in the description to edit everything in the client or click the submit button to carry the values of each field into the body of the email. I also don't want to bother the band before they even know about this project, so all emails will be directed to my personal account.
 
