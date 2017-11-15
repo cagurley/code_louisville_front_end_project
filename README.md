@@ -8,7 +8,7 @@
 
 To view the site, just navigate to https://cagurley.github.io/code_louisville_front_end_project. To view the source code, navigate to https://github.com/cagurley/code_louisville_front_end_project.
 
-This project is built on Bootstrap with JQuery and utilizes a Google font. The appropriate <link> and <script> tags can be found at the end of the head and the end of the body, respectively.
+This project is built on Bootstrap with JQuery and utilizes a Google font. The appropriate link and script tags can be found at the end of the head and the end of the body, respectively.
 
 The custom CSS used is linked at the bottom of the head; to view it, navigate to 'css/custom.css'. The JavaScript snippet for YouTube's iframe API is linked at the end of the body; to view it, navigate to 'js/embed.js'. Finally, my custom JavaScript, based on a W3C script for smooth screen scroll animation and containing the code for my screen transitions and audio playback, is also linked at the end of the body; to view it, navigate to 'js/app.js'.
 
