@@ -24,5 +24,5 @@ The video player included is added via YouTube's iframe API and resized with a w
 
 ### Thanks for reviewing my site! Please let me know where I can most improve.
 
-###### Website &copy Colton Atticus Gurley
-###### Music, Images, and Likenesses &copy (ohlm)
+###### Website &copy; Colton Atticus Gurley
+###### Music, Images, and Likenesses &copy; (ohlm)
