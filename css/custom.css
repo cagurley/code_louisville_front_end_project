@@ -49,9 +49,18 @@ figcaption {
 Landing
 ******************************/
 
+#landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .jumbotron {
   background-color: #fdfdfd;
   margin: 0;
+  padding: 1rem;
 }
 
 #audioland {
@@ -73,6 +82,10 @@ Landing
 
 h3 {
   padding-bottom: 2rem;
+}
+
+h3:last-child {
+  padding-bottom: 0;
 }
 
 .landlink {
@@ -127,6 +140,7 @@ Navigation
   height: 46px;
   z-index: 500;
   background-color: #eff1f2;
+  align-items: center;
 }
 
 #foot div {
@@ -169,8 +183,8 @@ Contact
 ******************************/
 
 textarea {
-  width: 400px;
-  height: 175px;
+  width: 250px;
+  height: 125px;
 }
 
 .btn:focus,
@@ -193,6 +207,13 @@ Discography
   font-style: italic;
 }
 
+/******************************
+Events
+******************************/
+
+.card {
+  width: 16rem;
+}
 
 /******************************
 Media
@@ -228,11 +249,63 @@ Merch
 Media Queries
 ******************************/
 
+@media all and (max-width: 399px) {
+
+  .videoWrapper {
+  	width: 256px;
+  	height: 156px;
+  }
+
+}
+
+@media all and (max-width: 575px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-weight: 400;
+  }
+
+}
+
+@media all and (max-width: 767px) {
+
+  .display-1 {
+    font-size: 4rem;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  #audioland {
+    width: 65px;
+    height: 65px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+}
+
 @media all and (min-width: 576px) {
+
+  textarea {
+    width: 400px;
+    height: 175px;
+  }
 
   .videoWrapper {
   	width: 448px;
   	height: 273px;
+  }
+
+  .card {
+    width: 22rem;
   }
 
   .merch {
