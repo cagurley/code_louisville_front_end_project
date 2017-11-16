@@ -64,8 +64,8 @@ Landing
 }
 
 #audioland {
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
 }
 
 .lplay,
@@ -81,7 +81,7 @@ Landing
 }
 
 h3 {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 h3:last-child {
@@ -221,8 +221,8 @@ Media
 
 .videoWrapper {
 	position: relative;
-	width: 320px;
-	height: 195px;
+  width: 256px;
+  height: 156px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -249,28 +249,29 @@ Merch
 Media Queries
 ******************************/
 
-@media all and (max-width: 399px) {
+/*This "style patch" query overwrites Reboot defaults that need to be kept above the medium breakpoint.*/
+@media all and (max-width: 767px) {
 
-  .videoWrapper {
-  	width: 256px;
-  	height: 156px;
+  .display-1 {
+    font-size: 5rem;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 
 }
 
+/*This "style patch" query overwrites Reboot defaults that need to be kept above the small breakpoint.*/
 @media all and (max-width: 575px) {
 
   h1 {
     font-size: 2rem;
   }
-
-  h3 {
-    font-weight: 400;
-  }
-
-}
-
-@media all and (max-width: 767px) {
 
   .display-1 {
     font-size: 4rem;
@@ -280,14 +281,17 @@ Media Queries
     font-size: 2rem;
   }
 
-  #audioland {
-    width: 65px;
-    height: 65px;
+  h3 {
+    font-weight: 400;
   }
 
-  h3 {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
+}
+
+@media all and (min-width: 400px) {
+
+  .videoWrapper {
+  	width: 320px;
+  	height: 195px;
   }
 
 }
@@ -316,6 +320,15 @@ Media Queries
 }
 
 @media all and (min-width: 768px) {
+
+  #audioland {
+    width: 100px;
+    height: 100px;
+  }
+
+  h3 {
+    padding-bottom: 2rem;
+  }
 
   textarea {
     width: 500px;
