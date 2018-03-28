@@ -49,14 +49,23 @@ figcaption {
 Landing
 ******************************/
 
+#landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .jumbotron {
   background-color: #fdfdfd;
   margin: 0;
+  padding: 1rem;
 }
 
 #audioland {
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
 }
 
 .lplay,
@@ -72,7 +81,11 @@ Landing
 }
 
 h3 {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+h3:last-child {
+  padding-bottom: 0;
 }
 
 .landlink {
@@ -127,6 +140,7 @@ Navigation
   height: 46px;
   z-index: 500;
   background-color: #eff1f2;
+  align-items: center;
 }
 
 #foot div {
@@ -169,8 +183,8 @@ Contact
 ******************************/
 
 textarea {
-  width: 400px;
-  height: 175px;
+  width: 250px;
+  height: 125px;
 }
 
 .btn:focus,
@@ -193,6 +207,13 @@ Discography
   font-style: italic;
 }
 
+/******************************
+Events
+******************************/
+
+.card {
+  width: 16rem;
+}
 
 /******************************
 Media
@@ -200,8 +221,8 @@ Media
 
 .videoWrapper {
 	position: relative;
-	width: 320px;
-	height: 195px;
+  width: 256px;
+  height: 156px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -228,11 +249,67 @@ Merch
 Media Queries
 ******************************/
 
+/*This "style patch" query overwrites Reboot defaults that need to be kept above the medium breakpoint.*/
+@media all and (max-width: 767px) {
+
+  .display-1 {
+    font-size: 5rem;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+}
+
+/*This "style patch" query overwrites Reboot defaults that need to be kept above the small breakpoint.*/
+@media all and (max-width: 575px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .display-1 {
+    font-size: 4rem;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-weight: 400;
+  }
+
+}
+
+@media all and (min-width: 400px) {
+
+  .videoWrapper {
+  	width: 320px;
+  	height: 195px;
+  }
+
+}
+
 @media all and (min-width: 576px) {
+
+  textarea {
+    width: 400px;
+    height: 175px;
+  }
 
   .videoWrapper {
   	width: 448px;
   	height: 273px;
+  }
+
+  .card {
+    width: 22rem;
   }
 
   .merch {
@@ -243,6 +320,15 @@ Media Queries
 }
 
 @media all and (min-width: 768px) {
+
+  #audioland {
+    width: 100px;
+    height: 100px;
+  }
+
+  h3 {
+    padding-bottom: 2rem;
+  }
 
   textarea {
     width: 500px;
