@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+    html {
+      max-width: 100%;
+      font-family: sans-serif;
+    }
+    input, textarea {
+      font-family: "Consolas";
+    }
+    button {
+      font-size: 2rem;
+    }
+    #postform, #output {
+      font-size: 1.5rem;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+</head>
+  <body>
+    <!-- The form below is used to input values for code generation specific to Ohlm's website -->
+    <h1>(ohlm) Website Event Card Code Generator</h1>
+    <h3>This form is intended to accept the necessary user input to generate code that can be used to update the event "cards" on (ohlm)'s website.</h3>
+    <form enctype="text/plain" id="ecform">
+      <div class="form-group">
+        <p>This first quartet of inputs will be used in comments in the code so that this event can be easily identified for modification or deletion.<br><br>The first input should be the venue name in all caps, the second input should be the four-digit year, the third input should be the two-digit month (use leading zero if necessary), and the fourth should be the two-digit day (use leading zero if necessary).<br><br>This will generate comments around this event markup in the form of "&lt;!-- Begin event card: VENUENAME_YYYYMMDD --&gt;" and "&lt;!-- End event card: VENUENAME_YYYYMMDD --&gt;".</p><br>
+        <label for="commentvenue">Venue (caps): </label>
+        <input type="text" name="commentvenue" id="commentvenue">
+        <label for="commentyear">Year (four-digit): </label>
+        <input type="text" name="commentyear" id="commentyear">
+        <label for="commentmonth">Month (two-digit): </label>
+        <input type="text" name="commentmonth" id="commentmonth">
+        <label for="commentday">Day (two-digit): </label>
+        <input type="text" name="commentday" id="commentday">
+      </div><br><hr><br>
+      <div class="form-group">
+        <label for="bannerhref">Image path including file extension; this image will be shown. For URL, type full address starting with protocol; for images stored in the "img" folder on the server, type relative path starting with "img/".<br><br>e.g. "https://scontent-ort2-1.xx.fbcdn.net/v/t31.0-8/22382204_1941382159469375_4856931430424885398_o.jpg?oh=37d68331f8cb882d454d69748fb10e0d&oe=5B1C88F1" or "img/show_20171118.jpg"</label><br><br>
+        <input type="text" name="bannerhref" id="bannerhref">
+      </div><br><hr><br>
+      <div class="form-group">
+        <label for="banneralt">Visual description of image for the visually impaired; this will typically be read only by screen-reading software.</label><br><br>
+        <textarea cols="35" rows="4" name="banneralt" id="banneralt"></textarea>
+      </div><br><hr><br>
+      <div class="form-group">
+        <label for="showtitle">Title of the show; this will be shown as the event's name.</label><br><br>
+        <input type="text" name="showtitle" id="showtitle">
+      </div><br><hr><br>
+      <div class="form-group">
+        <label for="showdescr">Description of the show; this will be shown.</label><br><br>
+        <textarea cols="20" rows="4" name="showdescr" id="showdescr"></textarea>
+      </div><br><hr><br>
+      <div class="form-group">
+        <label for="showlineup">Band lineup for the show; this will be shown.<br><br>e.g. "Stagecoach Inferno, (ohlm), Decapitron"</label><br><br>
+        <input type="text" name="showlineup" id="showlineup">
+      </div><br><hr><br>
+      <div class="form-group">
+        <label for="venue">Venue name and address; this will be shown.<br><br>e.g. "Kaiju, 1004 E Oak St, Louisville, KY 40204"</label><br><br>
+        <input type="text" name="venue" id="venue">
+      </div><br><hr><br>
+      <div class="form-group">
+        <label for="datetimeprice">Date, time, and price of the show; this will be shown.<br><br>e.g. "November 18th at 8 PM, $5 at the door"</label><br><br>
+        <input type="text" name="datetimeprice" id="datetimeprice">
+      </div><br><hr><br>
+      <div class="form-group">
+        <label for="originhref">The URL of the original page for the event, starting with the protocol. This will only be the destination of a link and not directly shown.<br><br>e.g. "https://www.facebook.com/events/261953967659165/"</label><br><br>
+        <input type="text" name="originhref" id="originhref">
+      </div><br><hr><hr><br>
+      <div class="form-group">
+        <!-- The default submit action is prevented via JavaScript -->
+        <button type="submit" class="btn"><b>GENERATE</b></button>
+        <button type="reset" class="btn"><b>CLEAR FORM</b></button>
+      </div>
+    </form><br><hr><hr>
+    <div id="postform">
+      <p>Below here is where your code will be generated. To update events on the site, delete all old events in the HTML from their beginning comments to their end comments (inclusive), then copy and paste the new code below (including comments) in the same place.</p>
+      <!-- The generated code will be written to the document here via JavaScript -->
+      <textarea cols="50" rows="25" id="output"></textarea>
+      <p>Code is generated above. To generate code for another event that you wish to add after the already generated code, click the "CLEAR FORM" button, fill out the form with the new event's information, and click "GENERATE". The new code will be appended to what is already in the output box. This can be repeated indefinitely.<br><br>After all desired code has been generated, select all the text in the box (Ctrl+A or Cmd+A) and copy (Ctrl+C or Cmd+C) and paste (Ctrl+V or Cmd+V) into a text document and save.<b>DO NOT CLOSE THIS TAB OR BROWSER WINDOW OR REFRESH THIS PAGE UNTIL THIS STEP IS COMPLETE.</b> Then open "index.html" in a text editor and find the "&lt;!-- BEGIN EVENT CARD DISPLAY --&gt;" comment (most editors easily accomplish this with a Ctrl+F or Cmd+F search). If replacing all cards, select everything below this comment and above the "&lt;!-- END EVENT CARD DISPLAY --&gt;" comment, <b>leaving both comments unselected</b>, delete the selection, and paste in the new code. If replacing only some cards, select each card from its "&lt;!-- Begin event card: VENUENAME_YYYYMMDD --&gt;" comment to its "&lt;!-- End event card: VENUENAME_YYYYMMDD --&gt;" comment, <b>including these comments in the selection</b>, and delete before pasting in the new code. <b>Note:</b> code renders from top to bottom, which is translated graphically as left to right for this website.</p>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="eventCardGenerator.js"></script>
+  </body>
+</html>
