@@ -88,6 +88,14 @@ audio.volume = 0.5;
 //     audio.play();
 //   }
 // });
+
+$('#lpause, #fpause').hide();
+
+$('#lplay').click( function () {
+  $('#lplay').hide()
+  $('#lpause').show()
+});
+
 $('#audioland, #audiofoot').click( function () {
   $('#audioland').toggleClass('lplay');
   $('#audiofoot').toggleClass('fplay');
