@@ -77,6 +77,17 @@ AUDIO
 var audio = new Audio('music/hail_prometheus.mp3');
 audio.volume = 0.5;
 // Toggle classes and play/pause contextually on .svg click
+// $('#audioland, #audiofoot').click( function () {
+//   $('#audioland').toggleClass('lplay');
+//   $('#audiofoot').toggleClass('fplay');
+//   $('#audioland').toggleClass('lpause');
+//   $('#audiofoot').toggleClass('fpause');
+//   if ($('#audioland').hasClass('lplay')) {
+//     audio.pause();
+//   } else {
+//     audio.play();
+//   }
+// });
 $('#audioland, #audiofoot').click( function () {
   $('#audioland').toggleClass('lplay');
   $('#audiofoot').toggleClass('fplay');

@@ -63,7 +63,12 @@ Landing
   padding: 1rem;
 }
 
-#audioland {
+/* #audioland {
+  width: 65px;
+  height: 65px;
+} */
+
+.audioland {
   width: 65px;
   height: 65px;
 }
@@ -151,7 +156,12 @@ Navigation
   color: #050505;
 }
 
-#audiofoot {
+/* #audiofoot {
+  width: 30px;
+  height: 30px;
+} */
+
+.audiofoot {
   width: 30px;
   height: 30px;
 }
