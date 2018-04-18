@@ -73,17 +73,17 @@ Landing
   height: 65px;
 }
 
-.lplay,
+/* .lplay,
 .lpause:hover,
 .lpause:focus {
   opacity: 1;
-}
+} */
 
-.lpause,
+/* .lpause,
 .lplay:hover,
 .lplay:focus {
   opacity: 0.5;
-}
+} */
 
 h3 {
   padding-bottom: 1rem;
@@ -331,7 +331,12 @@ Media Queries
 
 @media all and (min-width: 768px) {
 
-  #audioland {
+  /* #audioland {
+    width: 100px;
+    height: 100px;
+  } */
+
+  .audioland {
     width: 100px;
     height: 100px;
   }
