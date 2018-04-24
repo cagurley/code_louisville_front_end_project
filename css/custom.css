@@ -45,6 +45,13 @@ figcaption {
   padding-bottom: 70px;
 }
 
+.audioland:hover,
+.audioland:focus,
+.audiofoot:hover,
+.audiofoot:focus {
+  opacity: 0.5;
+}
+
 /******************************
 Landing
 ******************************/
@@ -63,27 +70,11 @@ Landing
   padding: 1rem;
 }
 
-/* #audioland {
-  width: 65px;
-  height: 65px;
-} */
-
 .audioland {
   width: 65px;
   height: 65px;
-}
-
-/* .lplay,
-.lpause:hover,
-.lpause:focus {
   opacity: 1;
-} */
-
-/* .lpause,
-.lplay:hover,
-.lplay:focus {
-  opacity: 0.5;
-} */
+}
 
 h3 {
   padding-bottom: 1rem;
@@ -156,26 +147,10 @@ Navigation
   color: #050505;
 }
 
-/* #audiofoot {
-  width: 30px;
-  height: 30px;
-} */
-
 .audiofoot {
   width: 30px;
   height: 30px;
-}
-
-.fplay,
-.fpause:hover,
-.fpause:focus {
   opacity: 0.7;
-}
-
-.fpause,
-.fplay:hover,
-.fplay:focus {
-  opacity: 0.5;
 }
 
 /******************************

@@ -77,33 +77,26 @@ AUDIO
 var audio = new Audio('music/hail_prometheus.mp3');
 audio.volume = 0.5;
 // Toggle classes and play/pause contextually on .svg click
-// $('#audioland, #audiofoot').click( function () {
-//   $('#audioland').toggleClass('lplay');
-//   $('#audiofoot').toggleClass('fplay');
-//   $('#audioland').toggleClass('lpause');
-//   $('#audiofoot').toggleClass('fpause');
-//   if ($('#audioland').hasClass('lplay')) {
-//     audio.pause();
-//   } else {
-//     audio.play();
-//   }
-// });
-
-$('#lpause, #fpause').hide();
-
-$('#lplay').click( function () {
-  $('#lplay').hide()
-  $('#lpause').show()
+$('#lplay, #fplay').click( function () {
+  $('#lplay').hide();
+  $('#fplay').hide();
+  $('#lpause').show();
+  $('#fpause').show();
 });
 
-$('#audioland, #audiofoot').click( function () {
-  $('#audioland').toggleClass('lplay');
-  $('#audiofoot').toggleClass('fplay');
-  $('#audioland').toggleClass('lpause');
-  $('#audiofoot').toggleClass('fpause');
-  if ($('#audioland').hasClass('lplay')) {
-    audio.pause();
-  } else {
+$('#lpause, #fpause').click( function () {
+  $('#lpause').hide();
+  $('#fpause').hide();
+  $('#lplay').show();
+  $('#fplay').show();
+});
+
+$('.audiobox').click( function () {
+  $('.audiobox').toggleClass('play');
+  $('.audiobox').toggleClass('pause');
+  if ($('.audiobox').hasClass('play')) {
     audio.play();
+  } else {
+    audio.pause();
   }
 });
