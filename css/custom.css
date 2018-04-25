@@ -159,6 +159,15 @@ Navigation
   opacity: 0.6;
 }
 
+#copyrights div a {
+  color: rgba(0,0,0,1);
+}
+
+#copyrights div a:hover,
+#copyrights div a:focus {
+  color: rgba(0,0,0,0.7);
+}
+
 /******************************
 Band
 ******************************/

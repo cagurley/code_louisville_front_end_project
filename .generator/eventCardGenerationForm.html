@@ -16,6 +16,14 @@
     #postform, #output {
       font-size: 1.5rem;
     }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover,
+    a:focus {
+      opacity: 0.7;
+    }
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 </head>
@@ -78,7 +86,10 @@
       <!-- The generated code will be written to the document here via JavaScript -->
       <textarea cols="50" rows="25" id="output"></textarea>
       <p>Code is generated above. To generate code for another event that you wish to add after the already generated code, click the "CLEAR FORM" button, fill out the form with the new event's information, and click "GENERATE". The new code will be appended to what is already in the output box. This can be repeated indefinitely.<br><br>After all desired code has been generated, select all the text in the box (Ctrl+A or Cmd+A) and copy (Ctrl+C or Cmd+C) and paste (Ctrl+V or Cmd+V) into a text document and save. <b>DO NOT CLOSE THIS TAB OR BROWSER WINDOW OR REFRESH THIS PAGE UNTIL THIS STEP IS COMPLETE.</b> Then open "index.html" in a text editor and find the "&lt;!-- BEGIN EVENT CARD DISPLAY --&gt;" comment (most editors easily accomplish this with a Ctrl+F or Cmd+F search). If replacing all cards, select everything below this comment and above the "&lt;!-- END EVENT CARD DISPLAY --&gt;" comment, <b>leaving both comments unselected</b>, delete the selection, and paste in the new code. If replacing only some cards, select each card from its "&lt;!-- Begin event card: VENUENAME_YYYYMMDD --&gt;" comment to its "&lt;!-- End event card: VENUENAME_YYYYMMDD --&gt;" comment, <b>including these comments in the selection</b>, and delete before pasting in the new code. <b>Note:</b> code renders from top to bottom, which is translated graphically as left to right for this website.</p>
-    </div>
+    </div><hr><br>
+    <div id="copyright">
+      <a href="mailto:atticus.gurley@gmail.com?subject=Contact_from_OHLM_ECGenForm" style="font-style: italic;">&copy; Colton Atticus Gurley</a>
+    </div><br>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="eventCardGenerator.js"></script>
   </body>
